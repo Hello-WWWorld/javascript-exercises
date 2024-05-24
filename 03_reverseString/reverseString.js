@@ -1,13 +1,13 @@
 const reverseString = function(string) {
-	let newString = "";
-	for (let i = string.length - 1; i >= 0; i--) {
-		newString += string[i];
-	}
+	newString =	string.split("").reverse("").join("");
 	return newString;
 
-};
+}
 
-reverseString ("hello there");
+reverseString("hello");
 
 // Do not edit below this line
 module.exports = reverseString;
+
+
+
