@@ -1,8 +1,18 @@
 const sumAll = function(start, end) {
-	finalSum = 0;
-	i = start;
 
-	while(i <= end) {
+	if (typeof start !== "number" || typeof end !== "number" || start < 0  || end < 0) {
+		return "ERROR";
+	}
+
+
+	let	finalSum = 0;
+
+	let lower = Math.min (start, end);
+	let higher = Math.max (start, end);
+
+	let i = lower;
+
+	while(i <= higher) {
 		finalSum += i;
 		i++;
 
