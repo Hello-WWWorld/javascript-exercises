@@ -1,5 +1,3 @@
-const arr = [2, 4, 6, 8, 10, 12, 14];
-const empty = [];
 
 const add = function(a, b) {
 	return a + b;
@@ -19,10 +17,11 @@ const sum = function (empty) {
 	return sum;
 };
 
-const multiply = function() {
-
-
-	
+const multiply = function(num) {
+	if (!num ||num.length === 0) {
+		return 0;
+	}
+	return num.reduce((accum, curr) => accum * curr, 1);
 
 };
 
