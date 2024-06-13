@@ -25,12 +25,23 @@ const multiply = function(num) {
 
 };
 
-const power = function() {
+const power = function(num, pow) {
+	let res = 1;
+	for (let i = 0; i < pow; i++) {
+		res *= num;
 
+	}
+	return res;
 	
 };
 
-const factorial = function() {
+const factorial = function(num) {
+	let res = 1;
+	for (let i = 2; i <= num; i++) {
+		res *= i;
+	}
+	return res;
+	
 	
 };
 
