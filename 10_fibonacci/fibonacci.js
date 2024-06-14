@@ -1,8 +1,12 @@
-const fibonacci = function(n) {
-	if (n <= 0) {
-		return "Error";
-	} else if (n === 1) {
+const fibonacci = function(input) {
+	const n = parseInt(input);
+
+	if (isNaN(n) || n < 0) {
+		return "OOPS"; 
+	} else if (n === 0) {
 		return 0;
+	} else if (n === 1) {
+		return 1;
 	} else if (n === 2) {
 		return 1;
 	}
